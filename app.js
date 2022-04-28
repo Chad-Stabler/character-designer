@@ -73,9 +73,9 @@ function displayCatchphrases() {
     catchphrasesEl.textContent = '';
     // loop through each catchphrase in state
     for (let phrase of catchPhrases) {
-        let newDiv = document.createElement('p');
+        let newDiv = document.createElement('li');
         newDiv.textContent = phrase;
-        catchphrasesEl.appendChild(newDiv);
+        catchphrasesEl.append(newDiv);
     }
     // and for each catchphrase
     
